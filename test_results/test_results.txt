@@ -1,0 +1,141 @@
+USER CREATION
+---------------------------------------------------------------------------------
+Enter First Name: Ben
+Enter Last Name: Carson
+Enter gender: male
+Enter D.O.B: 18/2/1980
+Enter City: Maseru
+Enter email addres: ben@email.com
+Enter your phone number: 3398983083
+Enter username: benito
+Enter Password: ··········
+Record inserted successfully into users table 
+The SQLite connection is closed
+
+Enter First Name: John
+Enter Last Name: Quinzy
+Enter gender: female
+Enter D.O.B: 1/1/1999
+Enter City: City
+Enter email addres: john@mailbox.com
+Enter your phone number: 1293809944535
+Enter username: jonito
+Enter Password: ··········
+Password has invalid characters, try again: ··········
+Record inserted successfully into users table 
+The SQLite connection is closed
+
+Enter First Name: Moseli
+Enter Last Name: Tsoeunyane
+Enter gender: Male
+Enter D.O.B: 16/03/1967
+Enter City: Maseru
+Enter email addres: mo@gmail.co
+Enter your phone number: 89897289080
+Enter username: mosca
+Enter Password: ··········
+Record inserted successfully into users table 
+The SQLite connection is closed
+---------------------------------------------------------------------------------
+
+DUPLICATE USERNAMES:
+---------------------------------------------------------------------------------
+Enter First Name: Moseli
+Enter Last Name: Tsoeu
+Enter gender: Male
+Enter D.O.B: 18/09/2021
+Enter City: Maseru
+Enter email addres: mos@tmail.co
+Enter your phone number: 989893280
+Enter username: mosca
+Enter Password: ··········
+Username already exist!
+---------------------------------------------------------------------------------
+
+
+TESTING PASSWORD:
+---------------------------------------------------------------------------------
+Enter First Name: Thabo
+Enter Last Name: Mosh
+Enter gender: Male
+Enter D.O.B: 18/02/2022
+Enter City: CA
+Enter email addres: mosc@mail.com
+Enter your phone number: 87792309
+Enter username: moshino
+Enter Password: ··········
+Password length should be between 8 and 15 characters in length, try again:
+
+Enter First Name: Thabo
+Enter Last Name: Mosh
+Enter gender: Male
+Enter D.O.B: 18/02/2022
+Enter City: CA
+Enter email addres: mosc@mail.com
+Enter your phone number: 87792309
+Enter username: moshino
+Enter Password: ··········
+Password length should be between 8 and 15 characters in length, try again: ··········
+Password should have at least one upper case character, try again:
+
+Enter First Name: Thabo
+Enter Last Name: Mosh
+Enter gender: Male
+Enter D.O.B: 18/02/2022
+Enter City: CA
+Enter email addres: mosc@mail.com
+Enter your phone number: 87792309
+Enter username: moshino
+Enter Password: ··········
+Password length should be between 8 and 15 characters in length, try again: ··········
+Password should have at least one upper case character, try again: ··········
+Password should have at least one special character, try again: 
+---------------------------------------------------------------------------------
+
+LISTING ALL USERS:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Users:
+('mosca', 'mosca', 'mosca', '2022-03-17 00:00:00', 'massr', 'mo@hb.co', '8989979422', 'cyber', b'$2b$12$whvUpdIMPkVYAZETGg4l3OyqsLZbrSk.v3IOIz7T33sit14wWKJOW')
+('Ben', 'Carson', 'male', '1980-02-18 00:00:00', 'Maseru', 'ben@email.com', '3398983083', 'benito', b'$2b$12$7sGYJ9GdFV3nNDfjPSQ3ZumA2i6oMXXcPYfaIpTJhYntXCnwscqIu')
+('John', 'Quinzy', 'female', '1999-01-01 00:00:00', 'City', 'john@mailbox.com', '1293809944535', 'jonito', b'$2b$12$KiqD5OFRr7VAaCvEoF5gcuTgacW/wQcbMb7HWSrJt7dBT/O..fDaW')
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SEARCHING NON-EXISTANT USER:
+---------------------------------------------------------------------------------
+Your OTP is: 369993
+Enter username: moscas
+Enter Password: ··········
+No such user in the database
+---------------------------------------------------------------------------------
+
+USING WRONG PASSWORD
+---------------------------------------------------------------------------------
+Your OTP is: 964536
+Enter username: mosca
+Enter Password: ··········
+Invalid login details
+---------------------------------------------------------------------------------
+
+
+WRONG CAPTCHA
+---------------------------------------------------------------------------------
+Enter username: mosca
+Enter Password: ··········
+Your OTP is: 076026
+Enter the otp: 076026
+Enter the text in the captcha image: LCYS_PCO
+Failed Login
+---------------------------------------------------------------------------------
+
+
+CORRECT LOGIN DETAILS
+---------------------------------------------------------------------------------
+Enter username: mosca
+Enter Password: ··········
+Your OTP is: 037904
+Enter the otp: 037904
+Enter the text in the captcha image: LCYS_PCOM7E
+Logged in Successfully!
+---------------------------------------------------------------------------------
+
+
