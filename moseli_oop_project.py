@@ -11,6 +11,7 @@ import getpass
 import string
 import secrets
 import sqlite3
+import bcrypt
 
 from string import (
         punctuation, whitespace, digits,
@@ -94,7 +95,7 @@ def pass_validator(password):
       return True
 
 #Encrypt user password using bcrypt
-import bcrypt
+
 def encrypt_pass(password):
 
     password = password.encode("ascii") #encode the password using base64 encoding
@@ -218,10 +219,6 @@ def get_dob(birthday):
         #correct_format = False
 
 #Function for creating a new user account
-import getpass
-import string
-import secrets
-import sqlite3
 
 def create_account():
 
@@ -275,7 +272,6 @@ def create_account():
 #REF: https://pynative.com/python-sqlite-insert-into-table/
 #This is a helper function for inserting the newlcy created users into the DB
 
-import sqlite3
 def insert_users(name, surname, gender,date_of_birth, city, email, phone_number, username, enc_pass):
   
   try:

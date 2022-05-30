@@ -14,7 +14,14 @@ Saving password in an unencrypted format is one of the critical basics that shou
 ### Multi-factor authentication
 Access to the system will enforce a multi-factor authentication using a time-based one-time-password (OTP) along with the user credentials. The library used is derived from PyOTP. When being enforced, the user is prompted for their credentials (username and password) and those are validated against the already stored credentials. The user is then prompted for the OTP and once inserted, they are then prompted to enter text from the captcha image. Login success is base on all the mentioned parameters to be correct. CAPTCHA is enabled to ensure that we can secure the platform against unsolicited login attempts which any lead to system instability or even denial-of-service(DoS).
 
+### How to run the scrips
+The Project contains four(4) python files.
+1. moseli_oop_project.py - contains all definitions and dependencies
+2. create_user.py = used for creating of a new user(self-registration by patients). It runs a main function which calls definitions for crearing a new user.
+3. user_login.py = used to validate a user attempting a login. All the dependencies are defined in the primary file, moseli_oop_project.py
+4. list_all_users.py = used to list all successfully registered users.
 
+The scripts user_login.py and list_all_users.py can produce output only when the create_user.py scipt has been run. All the scripts can be run directly but should be within one folder during run time.
 
 ### References:
 Benita, H (2021) Preventing SQL Injection Attacks With Python. Available from:
